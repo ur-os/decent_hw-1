@@ -167,6 +167,7 @@ ByteArray::size_type Aes256::encrypt_start(const ByteArray::size_type plain_leng
     m_remainingLength = plain_length;
 
     // Generate salt
+    srand(34752501);
     ByteArray::iterator it = m_salt.begin(), itEnd = m_salt.end();
     while (it != itEnd)
         *(it++) = (rand() & 0xFF);
