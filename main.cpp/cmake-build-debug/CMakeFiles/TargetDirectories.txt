@@ -1,3 +1,0 @@
-/home/ur0s/park/main.cpp/cmake-build-debug/CMakeFiles/rebuild_cache.dir
-/home/ur0s/park/main.cpp/cmake-build-debug/CMakeFiles/edit_cache.dir
-/home/ur0s/park/main.cpp/cmake-build-debug/CMakeFiles/main_cpp.dir
