@@ -9,7 +9,7 @@ int main(int argc, char *argv[]) {
 
     std::ifstream stud_names;
     stud_names.open(args.path);
-    if(stud_names.is_open() == 0)
+    if (stud_names.is_open() == 0)
         std::cout << "File not found" << ". Now path is: \"" << args.path << '\"';
 
 

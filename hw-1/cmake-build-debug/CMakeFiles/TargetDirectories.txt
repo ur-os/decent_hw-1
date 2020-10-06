@@ -1,3 +1,0 @@
-/home/ur0s/park/hw-1/cmake-build-debug/CMakeFiles/rebuild_cache.dir
-/home/ur0s/park/hw-1/cmake-build-debug/CMakeFiles/edit_cache.dir
-/home/ur0s/park/hw-1/cmake-build-debug/CMakeFiles/hw-1.dir

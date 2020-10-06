@@ -23,18 +23,18 @@ Args parse_prog_args(int argc, char *argv[]) {
 
     for (int i = 0; i < 4; i++) {
         argsuments[i].erase(std::remove(argsuments[i].begin(),
-                                argsuments[i].end(), '\''),
-                                argsuments[i].end());
+                                        argsuments[i].end(), '\''),
+                            argsuments[i].end());
         argsuments[i].erase(std::remove(argsuments[i].begin(),
-                                argsuments[i].end(), '\\'),
-                                argsuments[i].end());
+                                        argsuments[i].end(), '\\'),
+                            argsuments[i].end());
         argsuments[i].erase(std::remove(argsuments[i].begin(),
-                                argsuments[i].end(), '\"'),
-                                argsuments[i].end());
+                                        argsuments[i].end(), '\"'),
+                            argsuments[i].end());
     }
 
     Args *a = new args;
-    argsuments[1][strlen(argsuments[1].c_str())-1] = '\0';
+    argsuments[1][strlen(argsuments[1].c_str()) - 1] = '\0';
     a->path = argsuments[1];
     a->n_tickets = std::stoi(argsuments[2]);
     a->seed_part = std::stoi(argsuments[3]);

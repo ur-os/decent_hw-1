@@ -1,1 +1,0 @@
-/usr/bin/c++  -g   CMakeFiles/hw-1.dir/main.cpp.o CMakeFiles/hw-1.dir/utils.cpp.o CMakeFiles/hw-1.dir/aes256.cpp.o  -o hw-1 
