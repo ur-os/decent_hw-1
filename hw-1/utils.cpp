@@ -1,9 +1,10 @@
 //
 // Created by ur0s on 10/1/20.
 //
+#include <iostream>
 #include "utils.hpp"
 
-std::string *parse_prog_args(int argc, char *argv[]) {
+Args parse_prog_args(int argc, char *argv[]) {
     auto *argsuments = new std::string[4];
 
     for (int i = 0, j = 0, k = 0; i < argc; i++) {
@@ -32,11 +33,10 @@ std::string *parse_prog_args(int argc, char *argv[]) {
                                 argsuments[i].end(), '\"'),
                                 argsuments[i].end());
     }
-    args a = {
-            &argsuments[1],
-            std::stoi(argsuments[2]),
-            std::stoi(argsuments[3])
-    };
+    Args *a = new args;
+    a->path = &argsuments[1];
+    a->n_tickets = std::stoi(argsuments[2]);
+    a->seed_part = std::stoi(argsuments[3]);
 
-    return args;
+    return *a;
 }

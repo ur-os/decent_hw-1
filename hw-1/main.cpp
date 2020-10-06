@@ -22,9 +22,11 @@
 //}
 
 int main(int argc, char *argv[]) {
-    std::string *args = parse_prog_args(argc, argv);
+    args args = parse_prog_args(argc, argv);
     std::ifstream stud_names;
     stud_names.open(argv[1]);
+    if(stud_names.is_open() == 0)
+        std::cout << "File not found" << ". Now path is: " << args.n_tickets;
 
 
     std::string stud_name;

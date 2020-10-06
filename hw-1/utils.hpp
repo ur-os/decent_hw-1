@@ -13,8 +13,8 @@ typedef struct args {
     std::string* path;
     int n_tickets;
     int seed_part;
-} args;
+} Args;
 
-std::string *parse_prog_args(int argc, char *argv[]);
+Args parse_prog_args(int argc, char *argv[]);
 
 #endif //MAIN_CPP_UTILS_HPP
