@@ -9,9 +9,10 @@ int main(int argc, char *argv[]) {
 
     std::ifstream stud_names;
     stud_names.open(args.path);
-    if (stud_names.is_open() == 0)
+    if (stud_names.is_open() == 0) {
         std::cout << "File not found" << ". Now path is: \"" << args.path << '\"';
-
+        return 1;
+    }
 
     std::string stud_name;
     while (stud_names.eof() != 1) {
@@ -40,7 +41,7 @@ int main(int argc, char *argv[]) {
         std::cout << ((std::stoul(hash_part_1)
                        ^ std::stoul(hash_part_2)
                        ^ std::stoul(hash_part_3))
-                      % (args.n_tickets + 1))
+                      % (args.n_tickets + 1)) + 1
                   << '\n';
     }
 
